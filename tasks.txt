@@ -1,0 +1,26 @@
+Task №1
+1. Go to https://rozetka.com.ua/.
+2. Press on «Смартфоны, ТВ и электроника» without waiting for hover.
+3. Press on «Телефоны».
+4. Press on «Смартфоны».
+4. Choose sorting by «новинки».
+5. Verify that the first element on the page is visually labeled as "новинка" (“new”).
+
+6. Find first element on the page, which does NOT have a label “new”, and in case if such element is found - verify that there are no elements with a label “new” after this one.
+7. If there is no such element on the page, but there is a button «Показать еще XX товаров» present on the screen (where XX is a number that tells how many more elements should be loaded, e.g. 25 or 32) - press that button and try to find the element again. Repeat steps 5-6 as long as needed to find the element or come to the end of results.
+The test should succeed if the first element has a label "new" and all "new" items on the page appear next to each other, while all items without such label are further down.
+The test should fail if either the first element is not new or there is an element (or many elements) without a label "new" between elements with such label.
+
+Task №2
+1. Go to https://rozetka.com.ua/.
+2. Press on «Смартфоны, ТВ и электроника».
+3. Press on «Телефоны».
+4. Press on «Смартфоны».
+5. Choose “Производитель” - «Motorola».
+6. Save the full name of some element which contains “Motorola Moto Z”.
+7. Go to https://rozetka.com.ua/.
+8. Fill in “Motorola Moto Z” into the search field on the top of the page and press «Найти».
+9. On the search results page try to find the element with exactly the same name as the one you saved on step 6.
+10. If there is no such element on the page, but there is a button «Показать еще XX товаров» present on the screen (where XX is a number that tells how many more elements should be loaded, e.g. 25 or 32) - press that button and try to find the element again (go to step 9). Repeat steps 9-10 as long as needed to find the element or come to the end of results.
+The test should succeed if the element with the name saved in step 6 is finally found on any iteration.
+The test should fail if the element could not be found and there is no button «Показать еще XX товаров» anymore.
