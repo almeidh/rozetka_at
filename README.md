@@ -19,11 +19,12 @@ Two tests written in Javascript using Protractor and Jasmine with simple reporti
 
 * NodeJS
 * Protractor (npm install -g protractor)
+* Chrome installed
 
 ### Working environment
 
 1. NodeJS v8.11.2 (tested)
-3. Chrome browser
+3. Chrome browser Version 71.0.3578.98 (tested)
 
 ### Installing
 
